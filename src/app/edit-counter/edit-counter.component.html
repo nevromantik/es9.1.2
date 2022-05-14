@@ -1,0 +1,15 @@
+
+
+<div>
+    <form #f="ngForm"  (ngSubmit)="form(f)" >
+      <input type="number" name="val" id="val" ngModel #num="ngModel">
+      <button (click)="subtrac(userValue)">SOTTRAI</button>
+      <button (click)="add(userValue)">AGGIUNGI</button>
+  
+    </form>
+  
+  </div>
+
+
+  <app-show-counter [added]="added" [subtracted]="subtracted"></app-show-counter>
+
